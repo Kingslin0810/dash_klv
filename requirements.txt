@@ -2,3 +2,5 @@ gunicorn
 altair
 dash
 vega_datasets
+plotly
+dash_bootstrap_components
