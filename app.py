@@ -23,8 +23,8 @@ app.layout = html.Div([
 # Set up callbacks/backend
 @app.callback(
     Output('scatter', 'srcDoc'),
-    Input('xcol-widget', 'value'))
-def plot_altair(xcol):
+    Input('ycol-widget', 'value'))
+def plot_altair(ycol):
     chart = alt.Chart(iris).mark_point().encode(
         y=ycol,
         x='petalWidth',
